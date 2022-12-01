@@ -7,6 +7,9 @@ module.exports = {
     './*.{html,md,js}'
   ],
   theme: {
+    container: {
+      center: true,
+    },
     extend: {},
   },
   plugins: [],
