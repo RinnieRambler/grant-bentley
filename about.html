@@ -54,19 +54,19 @@ title: About page
     </div>
 </section>
 
-<!------- FAQ NEED TO ADD YAML DATA FILE ------->
+<!------- FAQ section ------->
 
 <section>
     <div>
         <div>
             <h3>RANDOM FACTS</h3>
         </div>
+        {% for item in site.data.faq %}
         <div>
-            {% for item in site.data.faq %}
-            <h3>{{item.question}}</h3>
-            <h3>{{item.answer}}</h3>
-            {% endfor%}
+            <button><h4>Q. {{item.question}}</h4><span>+</span></button>
+            <div><p>A. {{item.answer}}</p></div>  
         </div>
+        {% endfor%}
     </div>
 </section>
 
