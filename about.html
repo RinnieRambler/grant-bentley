@@ -1,0 +1,74 @@
+---
+layout: default
+title: About page
+---
+
+<!---- Pulling in header banner ------>
+
+<!------- image section -------->
+
+<section>
+    <div grid col-span-3>
+        <div style="background-image: url(#)"></div>
+        <div style="background-image: url(#)"></div>
+        <div style="background-image: url(#)"></div>
+    </div>
+</section>
+
+<!-------- About section image and text ------>
+
+<section>
+    <div>
+        <div>
+            <img>
+        </div>
+        <div> 
+            <h3>ABOUT</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam accusantium animi itaque expedita nisi reprehenderit harum unde veniam libero sit eligendi delectus rerum officiis esse distinctio voluptates et, perspiciatis ex!</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam accusantium animi itaque expedita nisi reprehenderit harum unde veniam libero sit eligendi delectus rerum officiis esse distinctio voluptates et, perspiciatis ex!</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam accusantium animi itaque expedita nisi reprehenderit harum unde veniam libero sit eligendi delectus rerum officiis esse distinctio voluptates et, perspiciatis ex!</p>
+        </div>
+    </div>
+    <div>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione ad esse ipsum facere eaque deserunt nihil nobis beatae maiores tempore quasi earum sunt, consectetur cupiditate at officiis quod. Expedita, doloribus.</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione ad esse ipsum facere eaque deserunt nihil nobis beatae maiores tempore quasi earum sunt, consectetur cupiditate at officiis quod. Expedita, doloribus.</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione ad esse ipsum facere eaque deserunt nihil nobis beatae maiores tempore quasi earum sunt, consectetur cupiditate at officiis quod. Expedita, doloribus.</p>
+    </div>
+</section>
+
+<!------- CTA (includes) ------->
+
+<!------- text and image section food inspo ------->
+
+<section>
+    <div>
+        <div>
+            <h3>FOOD STYLE & INFLUENCES</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus itaque voluptas, eveniet assumenda explicabo adipisci ipsam! Repudiandae quos minus consequatur earum eius nostrum vitae neque, ullam deleniti dolores, sequi iure.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus itaque voluptas, eveniet assumenda explicabo adipisci ipsam! Repudiandae quos minus consequatur earum eius nostrum vitae neque, ullam deleniti dolores, sequi iure. Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus itaque voluptas, eveniet assumenda explicabo adipisci ipsam! Repudiandae quos minus consequatur earum eius nostrum vitae neque, ullam deleniti dolores, sequi iure.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus itaque voluptas, eveniet assumenda explicabo adipisci ipsam! Repudiandae quos minus consequatur earum eius nostrum vitae neque, ullam deleniti dolores, sequi iure. Repudiandae quos minus consequatur earum eius nostrum vitae neque, ullam deleniti dolores, sequi iure.</p>
+        </div>
+        <div>
+            <img>
+        </div>
+    </div>
+</section>
+
+<!------- FAQ NEED TO ADD YAML DATA FILE ------->
+
+<section>
+    <div>
+        <div>
+            <h3>RANDOM FACTS</h3>
+        </div>
+        <div>
+            {% for item in site.data.faq %}
+            <h3>{{item.question}}</h3>
+            <h3>{{item.answer}}</h3>
+            {% endfor%}
+        </div>
+    </div>
+</section>
+
+<!---- Footer pulling in ------>
+
